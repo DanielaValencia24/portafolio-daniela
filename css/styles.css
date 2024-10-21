@@ -319,9 +319,59 @@ section,
 }
 
 .services__item p {
-  color: #8e8e8e; /* color gris claro */
+  color: #eac4d5; /* color gris claro */
 }
 
+.portfolio__grid {
+  display: grid; /* muestra el contenido en forma de cuadrícula */
+  grid-template-columns: 1fr 1fr 1fr; /* tres columnas de igual tamaño */
+  gap: 20px; /* espacio de 20 píxeles entre las columnas */
+}
+
+.portfolio__item {
+  background: white; /* fondo blanco */
+  border-radius: 10px; /* bordes redondeados de 10 píxeles */
+  position: relative; /* posición relativa */
+  object-fit: cover; /* ajusta la imagen para cubrir el contenedor */
+  overflow: hidden; /* oculta el desbordamiento */
+  font-size: 14px; /* tamaño de fuente de 14 píxeles */
+}
+
+.portfolio__img {
+  width: 100%; /* ancho del 100% */
+  height: 100%; /* altura del 100% */
+  object-fit: cover; /* ajusta la imagen para cubrir el contenedor */
+  display: block; /* se comporta como un bloque */
+  transition: all 1s; /* transición de 1 segundo para todas las propiedades */
+  filter: grayscale(0.5); /* aplica un filtro en escala de grises del 50% */
+}
+
+.portfolio__description {
+  padding: 50px; /* relleno de 50 píxeles */
+  position: absolute; /* posición absoluta */
+  background-color: rgba(0, 0, 0, 0.7); /* fondo negro semi-transparente */
+  top: 300px; /* posición superior de 300 píxeles */
+  height: 100%; /* altura del 100% */
+  width: 100%; /* ancho del 100% */
+  opacity: 0; /* completamente transparente */
+  transition: all 0.5s; /* transición de 0.5 segundos para todas las propiedades */
+  z-index: 1; /* nivel z para superponer */
+  display: flex; /* utiliza un contenedor flexible */
+  justify-content: center; /* centra el contenido horizontalmente */
+  flex-direction: column; /* organiza el contenido en una columna */
+}
+
+.portfolio__item:hover .portfolio__description {
+  visibility: visible; /* hace visible el contenido al pasar el mouse */
+  opacity: 1; /* opacidad completa */
+  transition: all 0.5s; /* transición de 0.5 segundos para todas las propiedades */
+  transform: translateY(-300px); /* mueve el contenido hacia arriba 300 píxeles */
+}
+
+.portfolio__item:hover .portfolio__img {
+  transition: all 1s; /* transición de 1 segundo para todas las propiedades */
+  transform: scale(1.3); /* escala la imagen al 130% */
+}
 
 .portfolio__description--title {
   color: #9d8189; /* color azul claro */
