@@ -1,126 +1,90 @@
-//IIFE (Inmediatly Invoked Function Expretions) for the color theme switch
+//IIFE (Expresión de Función Ejecutada Inmediatamente) para el cambio de tema de color
 ((d) => {
    const $btnSwitch = d.querySelector('#switch');
    
-   $btnSwitch.addEventListener('click',() => {
+   $btnSwitch.addEventListener('click', () => {
       d.body.classList.toggle('dark');
       $btnSwitch.classList.toggle('active');
    });
 })(document);
 
-
-//IIFE (Inmediatly Invoked Function Expretions) for the page's loader
-((d,w) => {
-
-   //Simple loader (Without 'Under construction')
-
-   // window.addEventListener('load',() => {
-   //    let $loader = d.querySelector('.loader');
-   //    $loader.classList.toggle('loader2');
-   // });
-
-
-//Loader with construction website template
-
-   w.addEventListener('load',() => {
-      const $loader = d.querySelector('.loader'),
-         $image = d.querySelector('.loader__img'),
-         $enterCount = d.querySelector('.enter-count');
-      let timeLeft = 5;   //-->5
-
-      $image.setAttribute('src','img/website-construction.jpg');
-      setTimeout(() => {
-         $image.classList.replace('loader__img','loader2__img');
-      }, 50);
-      setInterval(() => {
-         $enterCount.textContent = `${timeLeft--} seconds to go!`;
-      }, 1000);
-      setTimeout(() => {
-         $loader.classList.toggle('loader2');
-      }, 6500);
-   });
-})(document, window);
-
-//IIFE (Inmediatly Invoked Function Expretions) for the authomatic slider
+//IIFE (Expresión de Función Ejecutada Inmediatamente) para el deslizador automático
 ((d)=> {
  
    const $slider = d.querySelector("#slider");
-   let $sliderSection = d.querySelectorAll(".slider__section"),
-      $sliderSectionLast = $sliderSection[$sliderSection.length - 1];
+   let $seccionSlider = d.querySelectorAll(".slider__section"),
+      $ultimaSeccionSlider = $seccionSlider[$seccionSlider.length - 1];
 
-   const $btnLeft = d.querySelector("#btn-left"),
-      $btnRight = d.querySelector("#btn-right");
+   const $btnIzquierda = d.querySelector("#btn-left"),
+      $btnDerecha = d.querySelector("#btn-right");
 
-   $slider.insertAdjacentElement("afterbegin", $sliderSectionLast);
+   $slider.insertAdjacentElement("afterbegin", $ultimaSeccionSlider);
 
-   function nextCertificate() {
-      let $sliderSectionFirst = d.querySelectorAll(".slider__section")[0];
+   function siguienteCertificado() {
+      let $primeraSeccionSlider = d.querySelectorAll(".slider__section")[0];
       $slider.style.marginLeft = "-200%";
-      $slider.style.transition = "all 0.5s";
+      $slider.style.transition = "todo 0.5s";
       setTimeout(function(){
          $slider.style.transition = "none";
-         $slider.insertAdjacentElement("beforeend",$sliderSectionFirst);
+         $slider.insertAdjacentElement("beforeend", $primeraSeccionSlider);
          $slider.style.marginLeft = "-100%";
       },500);
    }
 
-   function previusCertificate() {
-      let $sliderSection = d.querySelectorAll(".slider__section");
-      $sliderSectionLast = $sliderSection[$sliderSection.length - 1];
+   function anteriorCertificado() {
+      let $seccionSlider = d.querySelectorAll(".slider__section");
+      $ultimaSeccionSlider = $seccionSlider[$seccionSlider.length - 1];
       $slider.style.marginLeft = "-200%";
-      $slider.style.transition = "all 0.5s"; 
+      $slider.style.transition = "todo 0.7s"; 
       setTimeout(() => {
          $slider.style.transition = "none";
-         $slider.insertAdjacentElement("afterbegin",$sliderSectionLast);
+         $slider.insertAdjacentElement("afterbegin", $ultimaSeccionSlider);
          $slider.style.marginLeft = "-100%";
       },500);
    }
 
-   $btnRight.addEventListener("click" , nextCertificate);
-   $btnLeft.addEventListener("click" , previusCertificate);
+   $btnDerecha.addEventListener("click", siguienteCertificado);
+   $btnIzquierda.addEventListener("click", anteriorCertificado);
 
-   //Next certificate each six seconds -> The slider goes forward
-   setInterval(nextCertificate,5000);
+   //Siguiente certificado cada seis segundos -> El deslizador avanza
+   setInterval(siguienteCertificado,5000);
 
 })(document);
 
+//IIFE (Expresión de Función Ejecutada Inmediatamente) para el menú responsivo
 
-//IIFE (Inmediatly Invoked Function Expretions) for the responsive menu
+(() => {
 
-(()=> {
+   const $boton = document.querySelector('.navbar__menu');
+   const $enlaces = document.querySelector('.navbar__links');
+   let $contador = 0;
 
-   const $button = document.querySelector('.navbar__menu');
-   const $links = document.querySelector('.navbar__links');
-   let $counter = 0;
-
-   $button.addEventListener('click',function(){
-      if($counter == 0){
-         $counter=1;
-         $links.classList.remove('one');
-         $links.classList.add('two');
-      }else{
-         $counter = 0;
-         $links.classList.add('one');
-         $links.classList.remove('two');
-      }
-   })
-
-   window.addEventListener('resize', function(){
-      if(screen.width > 991){
-         $counter=0;
-         $links.classList.remove('two');
-         $links.className = ('navbar__links one');
+   $boton.addEventListener('click', function(){
+      if($contador == 0){
+         $contador = 1;
+         $enlaces.classList.remove('one');
+         $enlaces.classList.add('two');
+      } else {
+         $contador = 0;
+         $enlaces.classList.add('one');
+         $enlaces.classList.remove('two');
       }
    });
 
-   $links.addEventListener('click', function(e){      
+   window.addEventListener('resize', function(){
+      if(screen.width > 991){
+         $contador = 0;
+         $enlaces.classList.remove('two');
+         $enlaces.className = ('navbar__links one');
+      }
+   });
+
+   $enlaces.addEventListener('click', function(e){      
       setTimeout(() => {         
-         $counter = 0;
-         $links.classList.add('one');
-         $links.classList.remove('two');
+         $contador = 0;
+         $enlaces.classList.add('one');
+         $enlaces.classList.remove('two');
       }, 600);
    });
 
 })();
-
-
