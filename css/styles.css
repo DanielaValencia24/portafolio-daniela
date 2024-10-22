@@ -39,6 +39,7 @@ section,
   padding: 0 20px; /* Espaciado horizontal */
 }
 
+/* Estilo para la barra de navegación */
 .navbar {
   position: fixed; /* Fija la barra de navegación */
   background: black; /* Color de fondo de la barra de navegación */
@@ -73,6 +74,7 @@ section,
   font-weight: 400; /* Grosor de fuente */
 }
 
+/* Estilo para los enlaces en la barra de navegación */
 .navbar__link a {
   color: #9d8189; /* Color del texto de los enlaces */
   transition: color 0.3s; /* Transición para el color de texto */
@@ -80,11 +82,30 @@ section,
   border-radius: 15px/20px; /* Bordes redondeados */
 }
 
+/* Efecto hover para los enlaces */
 .navbar__link a:hover {
   background-color: #111; /* Color de fondo al pasar el mouse sobre el enlace */
   color: #9d8189; /* Color del texto al pasar el mouse */
 }
 
+/* Estilo para el botón de descargar CV */
+.navbar__link button {
+  color: white;
+  background-color: black; /* Fondo negro */
+  border: none; /* Sin borde */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: color 0.3s; /* Transición para el color de texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 15px/20px; /* Bordes redondeados */
+  
+}
+
+/* Efecto hover para el botón de descargar CV */
+.navbar__link button:hover {
+  background-color: #111; /* Color de fondo al pasar el mouse sobre el enlace */
+  color: #9d8189; /* Cambia el color en el hover */
+}
 .switch {
   background: #303030; /* Color de fondo del interruptor */
   border-radius: 1000px; /* Bordes redondeados */
@@ -99,13 +120,13 @@ section,
 .switch::after {
   content: ""; /* Crea un pseudo-elemento */
   display: block; /* Muestra el pseudo-elemento como bloque */
-  width: 30px; /* Ancho del pseudo-elemento */
-  height: 30px; /* Altura del pseudo-elemento */
+  width: 32px; /* Ancho del pseudo-elemento */
+  height: 32px; /* Altura del pseudo-elemento */
   border: 1px solid black; /* Borde del pseudo-elemento */
   position: absolute; /* Posicionamiento absoluto */
   background: #dd2d4a; /* Color de fondo del pseudo-elemento */
-  top: 0; /* Alineación en la parte superior */
-  left: 0; /* Alineación a la izquierda */
+  top: 6; /* Alineación en la parte superior */
+  left: 5; /* Alineación a la izquierda */
   right: unset; /* Sin alineación a la derecha */
   border-radius: 100px; /* Bordes redondeados */
   transition: 0.4s ease all; /* Transición suave para el pseudo-elemento */
@@ -622,14 +643,20 @@ section,
 }
 
 .form__buttons {
+  justify-content: center; /* Centrar los botones horizontalmente */
+  margin-top: 10px; /* Espacio superior para los botones */
   display: inline-flex; /* Mostrar los botones del formulario como un contenedor flexible */
 }
 
 .form__button {
-  width: 30%; /* Ancho de los botones del formulario */
-  background-color: #777; /* Color de fondo gris */
+  width: auto; /* Dejar que el ancho se ajuste al contenido */
+  background-color: #777; /* Color de fondo gris para los botones */
   color: #000; /* Color de texto negro */
   font-weight: 600; /* Negrita */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno para los botones */
+  margin: 0 5px; /* Espacio entre los botones */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
 }
 
 .form__button:hover {
@@ -661,3 +688,5 @@ section,
   font-weight: 700; /* Negrita */
   text-shadow: 1px 1px #040402; /* Sombra de texto */
 }
+ 
+

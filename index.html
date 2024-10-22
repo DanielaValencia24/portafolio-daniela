@@ -42,19 +42,22 @@
             <li class="navbar__link active" data-ref="about">
                <a href="#about">Acerca de</a><span class="navbar__link--separator">|</span>
             </li>
-            <li class="navbar__link active" data-ref="about">
+            <li class="navbar__link active" data-ref="education">
                <a href="#education">Educación</a><span class="navbar__link--separator">|</span>
             </li>
-            <li class="navbar__link active" data-ref="about">
+            <li class="navbar__link active" data-ref="experience">
                <a href="#experience">Experiencia</a><span class="navbar__link--separator">|</span>
             </li>
             <li class="navbar__link active" data-ref="services">
                <a href="#services">Servicios</a><span class="navbar__link--separator">|</span>
             </li>
             <li class="navbar__link active" data-ref="contact">
-               <a href="#contact">Contacto </a>
+               <a href="#contact">Contacto</a><span class="navbar__link--separator">|</span>
             </li>
-            <li class="navar__link">
+            <li class="navbar__link"> <!-- Agregamos el nuevo elemento aquí -->
+               <button id="downloadCV" class="btn">Descargar CV</button>
+         
+            <li class="navbar__link">
                <button class="switch" id="switch">
                   <span class="switch__symbol switch__symbol--moon"><i class="fas fa-moon"></i></span>
                   <span class="switch__symbol switch__symbol--sun"><i class="fas fa-sun"></i></span>
@@ -183,128 +186,129 @@
    <section id="experience">
       <div class="container">
          <h2 class="section__title">Experiencia</h2>
-         <div class="section-decoration"></div>
-               <p>
-                  <h2>Aunque no tengo experiencia laboral previa, 
-                     estoy muy entusiasmada por la oportunidad de adquirir nuevas 
-                     habilidades y conocimientos. 
-                     Estoy comprometida con el aprendizaje continuo y deseosa de 
-                     contribuir positivamente al equipo. Estoy lista para enfrentar 
-                     nuevos desafíos y crecer profesionalmente.</h2>  
-              </p>
-            </div>
-         </section>
-         <section id="services">
-            <div class="container">
-               <h2 class="section__title">Servicios</h2>
-               <div class="section-decoration"></div>
-               <h3 class="section__subtitle">Servicios que puedo ofrecer a una empresa</h3>
-               <div class="services__grid">
-                  <div class="services__item">
-                     <i class="fas fa-users"></i>
-                     <h3>Trabajo en equipo y sinergia</h3>
-                     <p>
-                        Creo firmemente en el poder del trabajo en equipo y la sinergia para alcanzar objetivos comunes. 
-                        La colaboración permite unir habilidades diversas, fomentar la creatividad y superar desafíos 
-                        de manera más efectiva.
-                     </p>
-                  </div>
-                  <div class="services__item">
-                     <i class="fas fa-laptop-code"></i>
-                     <h3>Desarrollo</h3>
-                     <p>
-                        Conozco la importancia de las arquitecturas limpias, en las que el objetivo principal es permitir que
-                        que las aplicaciones se adapten a los cambios tecnológicos y a las nuevas necesidades de los usuarios.
-                     </p>
-                  </div>
-                  <div class="services__item">
-                     <i class="fas fa-lightbulb"></i>
-                     <h3>Trabajo creativo</h3>
-                     <p>
-                        Ser creativo ayuda a resolver mejor los problemas en todos los ámbitos de la vida 
-                        y el trabajo. La creatividad nos ayudará a ver las cosas de otra manera y a afrontar mejor la incertidumbre.
-                  </div>
-                  <div class="services__item">
-                     <i class="fas fa-chart-line"></i>
-                     <h3>Automatización de procesos</h3>
-                     <p>
-                        Es clave para aumentar la eficiencia y reducir errores. Me apasiona identificar tareas repetitivas y desarrollar 
-                        soluciones que optimicen el flujo de trabajo. 
+         <h3 class="section__description">
+            
+               <p>Aunque no tengo experiencia laboral previa, 
+                  estoy muy entusiasmada por la oportunidad de adquirir nuevas 
+                  habilidades y conocimientos. 
+                  Estoy comprometida con el aprendizaje continuo y deseosa de 
+                  contribuir positivamente al equipo. Estoy lista para enfrentar 
+                  nuevos desafíos y crecer profesionalmente.
+           </p>
+         </div>
+      </section>
+      <section id="services">
+         <div class="container">
+            <h2 class="section__title">Servicios</h2>
+            <div class="section-decoration"></div>
+            <h3 class="section__subtitle">Servicios que puedo ofrecer a una empresa</h3>
+            <div class="services__grid">
+               <div class="services__item">
+                  <i class="fas fa-users"></i>
+                  <h3>Trabajo en equipo y sinergia</h3>
+                  <p>
+                     Creo firmemente en el poder del trabajo en equipo y la sinergia para alcanzar objetivos comunes. 
+                     La colaboración permite unir habilidades diversas, fomentar la creatividad y superar desafíos 
+                     de manera más efectiva.
+                  </p>
+               </div>
+               <div class="services__item">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3>Desarrollo</h3>
+                  <p>
+                     Conozco la importancia de las arquitecturas limpias, en las que el objetivo principal es permitir que
+                     que las aplicaciones se adapten a los cambios tecnológicos y a las nuevas necesidades de los usuarios.
+                  </p>
+               </div>
+               <div class="services__item">
+                  <i class="fas fa-lightbulb"></i>
+                  <h3>Trabajo creativo</h3>
+                  <p>
+                     Ser creativo ayuda a resolver mejor los problemas en todos los ámbitos de la vida 
+                     y el trabajo. La creatividad nos ayudará a ver las cosas de otra manera y a afrontar mejor la incertidumbre.
+               </div>
+               <div class="services__item">
+                  <i class="fas fa-chart-line"></i>
+                  <h3>Automatización de procesos</h3>
+                  <p>
+                     Es clave para aumentar la eficiencia y reducir errores. Me apasiona identificar tareas repetitivas y desarrollar 
+                     soluciones que optimicen el flujo de trabajo. 
 
-                     </p>
-                  </div>
-                  <div class="services__item">
-                     <i class="fas fa-tachometer-alt"></i>
-                     <h3>Buen rendimiento</h3>
-                     <p>
-                        Sé que el rendimiento es un atributo de calidad esencial de todo sistema informático. Muchos sistemas 
-                        no podrían usarse como lo hacen normalmente si no resolvieran problemas de rendimiento.
-                     </p>
-                  </div>
-                  <div class="services__item">
-                     <i class="fas fa-crosshairs"></i>
-                     <h3>Eficacia</h3>
-                     <p>
-                        Es esencial en cada proyecto en el que me involucro. Me enfoco en alcanzar resultados óptimos a través de la planificación, 
-                        la organización y la priorización de tareas.
-                  </div>
+                  </p>
+               </div>
+               <div class="services__item">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <h3>Buen rendimiento</h3>
+                  <p>
+                     Sé que el rendimiento es un atributo de calidad esencial de todo sistema informático. Muchos sistemas 
+                     no podrían usarse como lo hacen normalmente si no resolvieran problemas de rendimiento.
+                  </p>
+               </div>
+               <div class="services__item">
+                  <i class="fas fa-crosshairs"></i>
+                  <h3>Eficacia</h3>
+                  <p>
+                     Es esencial en cada proyecto en el que me involucro. Me enfoco en alcanzar resultados óptimos a través de la planificación, 
+                     la organización y la priorización de tareas.
                </div>
             </div>
-         </section>
-        
-         <section id="contact">
-            <div class="container">
-               <h2 class="section__title">Contacto</h2>
-               <div class="section-decoration"></div>
-               <h3 class="section__subtitle">
-                  ¿Tienes alguna pregunta? ¡No dudes en escribirme!
-                  <br>
-                  
-               </h3>
-               <div class="flex-container">
-                  <form class="form" action="/PortafolioDesarrollo/ServletContacto.jsp" method="post">
-                     <input class="form__input" type="text" name="nombre" placeholder="Nombre Completo" required>
-                     <input class="form__input" type="email" name="email" placeholder="Correo Electrónico" required>
-                     <input class="form__input" type="text" name="asunto" placeholder="Asunto" required>
-                     <textarea class="form__input form__input--textarea" name="mensaje" required
-                        placeholder="Aquí puedes escribir tu mensaje"></textarea>
-                     <div class="form__buttons">
-                        <input class="form__button  form__input" type="submit">
-                        <input class="form__button  form__input" type="reset">
-                     </div>
-                  </form>
-                  <div class="contact__item--form">
-                     <img src="img/email.svg" type="image/svg" alt="Image send email">
+         </div>
+      </section>
+     
+      <section id="contact">
+         <div class="container">
+            <h2 class="section__title">Contacto</h2>
+            <div class="section-decoration"></div>
+            <h3 class="section__subtitle">
+               ¿Tienes alguna pregunta? ¡No dudes en escribirme!
+               <br>
+               
+            </h3>
+            <div class="flex-container">
+               <form class="form" action="/PortafolioDesarrollo/ServletContacto.jsp" method="post">
+                  <input class="form__input" type="text" name="nombre" placeholder="Nombre Completo" required>
+                  <input class="form__input" type="email" name="email" placeholder="Correo Electrónico" required>
+                  <input class="form__input" type="text" name="asunto" placeholder="Asunto" required>
+                  <textarea class="form__input form__input--textarea" name="mensaje" required
+                     placeholder="Aquí puedes escribir tu mensaje"></textarea>
+                  <div class="form__buttons">
+                     <input class="form__button" type="submit" value="Enviar">
+                     <input class="form__button" type="reset" value="Limpiar">
                   </div>
+               </form>
+               <div class="contact__item--form">
+                  <img src="img/email.svg" type="image/svg" alt="Image send email">
                </div>
             </div>
-         </section>
-         <footer class=" footer">
-            <div class="footer__item">
-               <div class="contact__item">
-                  <a href="https://www.whatsapp.com/+573193265310/" target="_blank"><i class="fab fa-whatsapp"></i></a>
-               </div>
-               <div class="contact__item">
-                  <a href="https://www.linkedin.com/in/juanccc-dev/" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-               </div>
-               <div class="contact__item">
-                  <a href="https://github.com/DanielaValencia24" target="_blank"><i class="fab fa-github"></i></a>
-               </div>
+         </div>
+      </section>
+
+      <footer class=" footer">
+         <div class="footer__item">
+            <div class="contact__item">
+               <a href="https://wa.me/573193265310?text=Hola%20Daniela%2C%20me%20gustaría%20tener%20más%20información" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="footer__item footer__item--copyright">
-               <img class="author-rights__item footer-copyright--logo" src="img/logo-Daniela.png" alt="logo-Daniela">
-               <div class="author-rights">
-                  <p class="author-rights__item">&copy; Copyright © 2024. @DanielaSánchezV. </p>
-                  <p class="author-rights__item">Todos los derechos reservados</p>
-               </div>
+            <div class="contact__item">
+               <a href="https://linkedin.com/in/daniela-sánchez-valencia-620b1a306" target="_blank"><i
+                     class="fab fa-linkedin-in"></i></a>
             </div>
-         </footer>
-         <script src="js/index.js"></script>
-      </body>
-      
-      </html>
+            <div class="contact__item">
+               <a href="https://github.com/DanielaValencia24" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+         </div>
+         <div class="footer__item footer__item--copyright">
+            <img class="author-rights__item footer-copyright--logo" src="img/logo-Daniela.png" alt="logo-Daniela">
+            <div class="author-rights">
+               <p class="author-rights__item">&copy; Copyright © 2024. @DanielaSánchezV. </p>
+               <p class="author-rights__item">Todos los derechos reservados</p>
+            </div>
+         </div>
+      </footer>
+      <script src="js/index.js"></script>
+   </body>
+   
+   </html>
 
 
 
-      
+   

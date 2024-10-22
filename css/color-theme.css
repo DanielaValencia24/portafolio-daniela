@@ -6,6 +6,25 @@ body.dark nav {
   background-color: #f7b2b7;
 }
 
+/* Modo claro para el botón de descargar CV */
+body.dark .navbar__link button {
+  color: black; /* Texto negro en modo claro */
+  background-color: #f7b2b7; /* Fondo rosado en modo claro */
+  border: none; /* Sin borde */
+  font-size: 16px;
+  font-weight: 600; /* Texto en negrilla */
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s; /* Transición tanto para el texto como el fondo */
+  padding: 10px;
+  border-radius: 15px/20px;
+}
+
+/* Efecto hover para el modo claro */
+body.dark .navbar__link button:hover {
+  background-color: #dd2d4a; /* Fondo más oscuro en el hover */
+  font-weight: 600; /* Mantiene el texto en negrilla */
+}
+
 body.dark .navbar__links {
   background-color: #f7b2b7;
 }
@@ -76,11 +95,13 @@ body.dark .colorized-star {
 
 body.dark .skill__item {
   color: #dd2d4a;
+  font-weight: 600; /* Mantiene el texto en negrilla */
 }
 
 body.dark .skill__item:hover {
   color: black;
   border: 1px solid black;
+  font-weight: 600; /* Mantiene el texto en negrilla */
 }
 
 body.dark .services__item {
@@ -139,4 +160,10 @@ body.dark .form__button:hover {
 
 body.dark .form__input:focus {
   background: linear-gradient(to bottom, transparent, #f7b2b7);
+}
+
+h3.section__description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #353535; 
 }
