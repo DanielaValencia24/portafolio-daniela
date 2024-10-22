@@ -1,7 +1,7 @@
-//IIFE (Expresión de Función Ejecutada Inmediatamente) para el cambio de tema de color
+// IIFE (Expresión de Función Ejecutada Inmediatamente) para el cambio de tema de color
 ((d) => {
    const $btnSwitch = d.querySelector('#switch');
-   
+
    $btnSwitch.addEventListener('click', () => {
       d.body.classList.toggle('dark');
       $btnSwitch.classList.toggle('active');

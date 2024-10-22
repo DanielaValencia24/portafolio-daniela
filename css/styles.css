@@ -103,7 +103,7 @@ section,
   height: 30px; /* Altura del pseudo-elemento */
   border: 1px solid black; /* Borde del pseudo-elemento */
   position: absolute; /* Posicionamiento absoluto */
-  background: #9d8189; /* Color de fondo del pseudo-elemento */
+  background: #dd2d4a; /* Color de fondo del pseudo-elemento */
   top: 0; /* Alineación en la parte superior */
   left: 0; /* Alineación a la izquierda */
   right: unset; /* Sin alineación a la derecha */
@@ -127,11 +127,11 @@ section,
 }
 
 .switch__symbol--sun {
-  color: yellow; /* Color del símbolo del sol */
+  color: #ffd97d; /* Color del símbolo del sol */
 }
 
 .switch__symbol--moon {
-  color: #184e77; /* Color del símbolo de la luna */
+  color: #b4b8ab; /* Color del símbolo de la luna */
 }
 
 .navbar__menu {
@@ -188,7 +188,7 @@ section,
 }
 
 .section__title {
-  color: #8e8e8e; /* Color del texto del título de sección */
+  color: #f5f5f5; /* Color del texto del título de sección */
   font-size: 35px; /* Tamaño de fuente del título de sección */
   margin-bottom: 40px; /* Margen inferior */
 }
@@ -253,7 +253,7 @@ section,
 .skill__item {
   background: #191919; /* fondo negro */
   font-size: 50px; /* tamaño de fuente de 50 píxeles */
-  color: #8e8e8e; /* color gris claro */
+  color: #eac4d5; /* color gris claro */
   padding: 35px; /* relleno de 35 píxeles */
   border-radius: 10px; /* bordes redondeados de 10 píxeles */
   transition: all 0.5s, font-weight 0s; /* transición de 0.5 segundos para todas las propiedades */
@@ -311,7 +311,7 @@ section,
   transition: all 0.3s; /* transición de 0.3 segundos para todas las propiedades */
   font-size: 40px; /* tamaño de fuente de 40 píxeles */
   margin: 20px 0; /* margen de 20 píxeles arriba y abajo */
-  color: #8e8e8e; /* color gris claro */
+  color: #eac4d5; /* color gris claro */
 }
 
 .services__item h3 {
@@ -467,6 +467,12 @@ section,
   color: #f5f5f5; /* Color de enlace blanco para elementos activos */
 }
 
+/**
+-
+-
+-
+-
+*/
 .container-slider {
   width: 90%; /* Ancho del contenedor del slider */
   max-width: 980px; /* Ancho máximo del contenedor */
