@@ -236,7 +236,7 @@ section,
 .about__description {
   text-align: left; /* texto alineado a la izquierda */
   font-weight: bold; /* texto en negrita */
-  padding-right: 80px; /* relleno a la derecha de 80 píxeles */
+  padding-right: 70px; /* relleno a la derecha de 80 píxeles */
   line-height: 40px; /* altura de línea de 40 píxeles */
 }
 
@@ -248,6 +248,36 @@ section,
 .soft-shillitem .about__summary {
   margin: 30px 0; /* margen de 30 píxeles arriba y abajo */
 }
+
+.container-slider {
+  position: relative;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1; /* Asegura que los botones estén por encima de las imágenes */
+}
+
+.slider__btn--left {
+  left: 15px; /* Ajusta según tu diseño */
+}
+
+.slider__btn--right {
+  right: 15px; /* Ajusta según tu diseño */
+}
+
+.slider__btn:hover {
+  color: #000; /* Cambia el color al pasar el ratón */
+}
+
 
 .about__description span {
   color: #f5f5f5; /* color blanco */
