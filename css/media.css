@@ -279,3 +279,30 @@
     font-size: 20px;
   }
 }
+
+/* Media query para pantallas medianas */
+@media (max-width: 768px) {
+  .skills-row {
+      flex-direction: column; /* Cambia a columna para pantallas medianas */
+      align-items: center;
+  }
+
+  .skill__item {
+      width: 100%; /* Ajusta el ancho al 100% */
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+  .skill__item {
+      font-size: 20px; /* Reduce el tamaño de la fuente */
+      padding: 15px; /* Ajusta el relleno */
+      height: auto; /* Ajusta la altura automática */
+      width: 100%; /* Ajusta el ancho al 100% */
+  }
+
+  .skill__item i {
+      font-size: 40px; /* Reduce el tamaño del icono */
+      margin-bottom: 5px; /* Reduce el espacio entre el icono y el texto */
+  }
+}
