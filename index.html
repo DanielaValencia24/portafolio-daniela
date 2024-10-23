@@ -103,49 +103,41 @@
                   <li class="about__description--item">- Empatía</li>
                </ul>
             </div>
+            
             <div class="about__skills">
                <div class="skill__title">
-                  <h3>Mis habilidades:</h3>
+                   <h3>Mis habilidades:</h3>
                </div>
-               <div class="skill__item">
-                  <i class="fab fa-html5"></i>
-                  <div class="skill__name">HTML</div>
-                 
+               <div class="skills-row">
+                   <div class="skill__item">
+                       <i class="fab fa-html5"></i>
+                       <div class="skill__name">HTML</div>
+                   </div>
+                   <div class="skill__item">
+                       <i class="fab fa-css3-alt"></i>
+                       <div class="skill__name">CSS</div>
+                   </div>
+                   <div class="skill__item">
+                       <i class="fab fa-js"></i>
+                       <div class="skill__name">JAVASCRIPT</div>
+                   </div>
                </div>
-               <div class="skill__item">
-                  <i class="fab fa-css3-alt"></i>
-                  <div class="skill__name">CSS</div>
-                  
+               <div class="skills-row">
+                   <div class="skill__item">
+                       <i class="fab fa-python"></i>
+                       <div class="skill__name">PYTHON</div>
+                   </div>
+                   <div class="skill__item">
+                       <i class="fab fa-git-alt"></i>
+                       <div class="skill__name">GIT & GITHUB</div>
+                   </div>
+                   <div class="skill__item">
+                       <i class="fab fa-react"></i>
+                       <div class="skill__name">REACT</div>
+                   </div>
                </div>
-               <div class="skill__item">
-                  <i class="fab fa-js"></i>
-                  <div class="skill__name">JAVASCRIPT</div>
-                  
-               </div>
-               <div class="skill__item">
-                  <i class="fab fa-lock"></i>
-                  <div class="skill__name">CIBER<br>SEGURIDAD</div>
-                  
-               </div>
-               <div class="skill__item">
-                  <i class="fab fa-python"></i>
-                  <div class="skill__name">PYTHON<br></div>
-                  
-               </div>
-               <div class="skill__item">
-                  <i class="fab fa-angular"></i>
-                  <div class="skill__name">ANGULAR<br></div>
-                  
-               </div>
-               <div class="skill__item">
-                  <i class="fab fa-git-alt"></i>
-                  <div class="skill__name">GIT &<br>GITHUB</div>
-                  
-               </div>
-               <div class="skill__item">
-                  <i class="fab fa-react"></i>
-                  <div class="skill__name">REACT<br></div>
-                 
+           </div>
+           
      
                </div>
             </div>
@@ -257,31 +249,45 @@
      
       <section id="contact">
          <div class="container">
-            <h2 class="section__title">Contacto</h2>
-            <div class="section-decoration"></div>
-            <h3 class="section__subtitle">
-               ¿Tienes alguna pregunta? ¡No dudes en escribirme!
-               <br>
-               
-            </h3>
-            <div class="flex-container">
-               <form class="form" action="/PortafolioDesarrollo/ServletContacto.jsp" method="post">
-                  <input class="form__input" type="text" name="nombre" placeholder="Nombre Completo" required>
-                  <input class="form__input" type="email" name="email" placeholder="Correo Electrónico" required>
-                  <input class="form__input" type="text" name="asunto" placeholder="Asunto" required>
-                  <textarea class="form__input form__input--textarea" name="mensaje" required
-                     placeholder="Aquí puedes escribir tu mensaje"></textarea>
-                  <div class="form__buttons">
-                     <input class="form__button" type="submit" value="Enviar">
-                     <input class="form__button" type="reset" value="Limpiar">
-                  </div>
-               </form>
-               <div class="contact__item--form">
-                  <img src="img/email.svg" type="image/svg" alt="Image send email">
-               </div>
-            </div>
+             <h2 class="section__title">Contacto</h2>
+             <div class="section-decoration"></div>
+             <h3 class="section__subtitle">
+                 ¿Tienes alguna pregunta? ¡No dudes en escribirme!
+                 <br>
+             </h3>
+             <div class="flex-container">
+                 <form
+                     action="https://formspree.io/f/mldedlkj"
+                     method="POST"
+                     class="form"
+                 >
+                     <label>
+                         Nombre Completo:
+                         <input class="form__input" type="text" name="nombre" placeholder="Nombre Completo" required>
+                     </label>
+                     <label>
+                         Correo Electrónico:
+                         <input class="form__input" type="email" name="email" placeholder="Correo Electrónico" required>
+                     </label>
+                     <label>
+                         Asunto:
+                         <input class="form__input" type="text" name="asunto" placeholder="Asunto" required>
+                     </label>
+                     <label>
+                         Mensaje:
+                         <textarea class="form__input form__input--textarea" name="mensaje" required placeholder="Aquí puedes escribir tu mensaje"></textarea>
+                     </label>
+                     <div class="form__buttons">
+                         <button type="submit" class="form__button form__input">Enviar</button>
+                         <input class="form__button form__input" type="reset" value="Limpiar">
+                     </div>
+                 </form>
+                 <div class="contact__item--form">
+                     <img src="img/email.svg" type="image/svg" alt="Image send email">
+                 </div>
+             </div>
          </div>
-      </section>
+     </section>
 
       <footer class=" footer">
          <div class="footer__item">

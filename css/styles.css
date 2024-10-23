@@ -17,8 +17,7 @@ html {
 }
 
 body {
-  background: #040402; /* Color de fondo del cuerpo */
-  background: #eac4d5; 
+  background: #252422; /* Color de fondo del cuerpo */
   color: #f5f5f5; /* Color del texto */
   transition: 0.5s ease all; /* Transición suave para cambios de estilo */
 }
@@ -204,7 +203,7 @@ section,
 .home__title--primary,
 .home__title--secondary {
   font-size: 45px; /* Tamaño de fuente de los títulos secundarios */
-  color: #9d8189; /* Color del texto de los títulos secundarios */
+  color: white; /* Color del texto de los títulos secundarios */
   text-shadow: 3px 3px black; /* Sombra del texto */
 }
 
@@ -224,7 +223,7 @@ section,
 }
 
 .section__subtitle {
-  color: #8e8e8e; /* color gris claro */
+  color: #f5f5f5; /* color gris claro */
   margin-bottom: 20px; /* margen inferior de 20 píxeles */
 }
 
@@ -263,23 +262,52 @@ section,
   display: grid; /* muestra el contenido en forma de cuadrícula */
   grid-template-columns: 1fr 1fr 1fr; /* tres columnas de igual tamaño */
   gap: 20px; /* espacio de 20 píxeles entre las columnas */
+  
 }
 
 .skill__title {
-  color: #8e8e8e; /* color gris claro */
+  color: #f5f5f5; /* color gris claro */
   grid-column: span 3; /* ocupa tres columnas */
   text-align: left; /* texto alineado a la izquierda */
 }
 
-.skill__item {
-  background: #191919; /* fondo negro */
-  font-size: 50px; /* tamaño de fuente de 50 píxeles */
-  color: #eac4d5; /* color gris claro */
-  padding: 35px; /* relleno de 35 píxeles */
-  border-radius: 10px; /* bordes redondeados de 10 píxeles */
-  transition: all 0.5s, font-weight 0s; /* transición de 0.5 segundos para todas las propiedades */
-  min-width: 130px; /* ancho mínimo de 130 píxeles */
+.about__skills {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px; /* Espacio entre filas */
+}
+
+.skill__item {
+  background: #191919;
+  font-size: 24px;
+  color: #eac4d5;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s, font-weight 0s;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.skill__item i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
 
 .skill__rating {
   font-size: 16px; /* tamaño de fuente de 16 píxeles */
@@ -427,7 +455,7 @@ section,
 .button {
   background: black; /* Color de fondo negro */
   border-radius: 4px; /* Bordes redondeados */
-  color: #aaa; /* Color de texto gris claro */
+  color: #f5f5f5; /* Color de texto gris claro */
   padding: 5px 10px; /* Espaciado interno */
   display: inline-block; /* Mostrar como bloque en línea */
   margin: auto; /* Margen automático para centrar */
@@ -463,7 +491,8 @@ section,
 
 .contact__item {
   background: #191919; /* Color de fondo negro */
-  color: #8e8e8e; /* Color de texto gris */
+  color: #f5f5f5; /* Color de texto gris */
+  font-weight: bold; /* texto en negrita */
   padding: 50px; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
   transition: all 0.3s; /* Transición suave para todos los cambios */
@@ -561,7 +590,9 @@ section,
 
 .footer__item--copyright {
   display: inline-flex; /* Mostrar el copyright como un contenedor flexible */
-  color: #ccc; /* Color de texto gris claro */
+  color: #f5f5f5; /* Color de texto gris claro */
+  font-weight: bold; /* texto en negrita */
+  font-weight: bold; /* texto en negrita */
   width: 60%; /* Ancho del elemento de copyright */
   font-weight: 800; /* Negrita */
   justify-content: space-evenly; /* Espaciado uniforme entre elementos */
@@ -578,7 +609,7 @@ section,
 }
 
 .footer a {
-  color: #8e8e8e; /* Color de enlaces gris */
+  color: #f5f5f5; /* Color de enlaces gris */
 }
 
 .footer a:hover {

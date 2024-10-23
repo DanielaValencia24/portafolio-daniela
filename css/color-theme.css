@@ -166,4 +166,5 @@ h3.section__description {
   font-size: 18px;
   line-height: 1.6;
   color: #353535; 
+  font-weight: bold; /* texto en negrita */
 }
