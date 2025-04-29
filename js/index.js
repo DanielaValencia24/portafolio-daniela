@@ -93,7 +93,7 @@
       const cvUrl = '../img/certificates/CV-Daniela-Sanchez-Valencia.pdf'; // Ruta CV
       const link = document.createElement('a'); // Crear un enlace
       link.href = cvUrl; // Asignar la URL del CV
-      link.download = 'cv-daniela-sánchez-valencia.pdf'; // Nombre del archivo que se descargará
+      //link.download = 'CV-Daniela-Sanchez-Valencia.pdf'; // Nombre del archivo que se descargará
       document.body.appendChild(link); // Añadir el enlace al documento
       link.click(); // Simular un clic en el enlace
       document.body.removeChild(link); // Eliminar el enlace del documento
