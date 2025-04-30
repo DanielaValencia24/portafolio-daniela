@@ -90,7 +90,7 @@
    const $btnDownloadCV = d.getElementById('downloadCV'); // Botón para descargar el CV
 
    $btnDownloadCV.addEventListener('click', () => {
-      //const cvUrl = '../img/certificates/CV-Daniela-Sanchez-Valencia.pdf'; // Ruta CV
+      const cvUrl = 'img/certificates/CV-Daniela-Sanchez-Valencia.pdf'; // Ruta CV
       const link = document.createElement('a'); // Crear un enlace
       link.href = cvUrl; // Asignar la URL del CV
       link.download = 'CV-Daniela-Sanchez-Valencia.pdf'; // Nombre del archivo que se descargará
